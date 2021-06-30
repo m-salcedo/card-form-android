@@ -9,15 +9,15 @@ import android.util.TypedValue
 private const val PLATFORM_MP = "MP"
 private const val PLATFORM_ML = "ML"
 
-internal fun Context.getPxFromDp(dp: Float): Float {
+fun Context.getPxFromDp(dp: Float): Float {
     return dp * resources.displayMetrics.density
 }
 
-internal fun Context.getPxFromSp(sp: Float): Int {
+fun Context.getPxFromSp(sp: Float): Int {
     return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp, resources.displayMetrics).toInt()
 }
 
-internal fun Context?.hasConnection(): Boolean {
+fun Context?.hasConnection(): Boolean {
     if (this != null) {
         try {
             var haveConnectedWifi = false
@@ -56,10 +56,10 @@ internal fun Context?.hasConnection(): Boolean {
     }
 }
 
-internal fun Context.isML() = getPlatform() == PLATFORM_ML
-internal fun Context.isMP() = getPlatform() == PLATFORM_MP
+fun Context.isML() = getPlatform() == PLATFORM_ML
+fun Context.isMP() = getPlatform() == PLATFORM_MP
 
-internal fun Context.getPlatform(): String {
+fun Context.getPlatform(): String {
     if (applicationInfo.packageName.contains("com.mercadolibre")) {
         return PLATFORM_ML
     }

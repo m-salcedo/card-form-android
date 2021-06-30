@@ -10,25 +10,25 @@ import androidx.fragment.app.FragmentManager
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 
-internal fun Fragment.hideKeyboard() {
+fun Fragment.hideKeyboard() {
     activity?.hideKeyboard()
 }
 
-internal fun Activity.hideKeyboard() {
+fun Activity.hideKeyboard() {
     val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0)
 }
 
-internal fun Fragment.showKeyboard() {
+fun Fragment.showKeyboard() {
     activity?.showKeyboard()
 }
 
-internal fun Activity.showKeyboard() {
+fun Activity.showKeyboard() {
     val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, 0)
 }
 
-internal fun FragmentManager.setupForAccessibility() {
+fun FragmentManager.setupForAccessibility() {
     addOnBackStackChangedListener {
         val lastFragmentWithView = fragments.last { it.view != null }
         for (fragment in fragments) {
@@ -41,15 +41,15 @@ internal fun FragmentManager.setupForAccessibility() {
     }
 }
 
-internal fun FragmentActivity?.setupForAccessibility() {
+fun FragmentActivity?.setupForAccessibility() {
     this?.supportFragmentManager?.setupForAccessibility()
 }
 
-internal fun Fragment?.setupForAccessibility() {
+fun Fragment?.setupForAccessibility() {
     this?.activity?.setupForAccessibility()
 }
 
-internal fun Fragment.addKeyBoardListener(
+fun Fragment.addKeyBoardListener(
     onKeyBoardOpen: (() -> Unit)? = null,
     onKeyBoardClose: (() -> Unit)? = null
 ) {

@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.data.model.response
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class Validation(val name: String,
+data class Validation(val name: String,
                                val values: List<String>,
                                val errorMessage: String) : Parcelable {
     constructor(parcel: Parcel) : this(

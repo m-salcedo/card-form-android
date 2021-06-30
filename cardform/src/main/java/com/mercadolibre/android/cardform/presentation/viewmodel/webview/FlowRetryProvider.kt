@@ -1,6 +1,6 @@
 package com.mercadolibre.android.cardform.presentation.viewmodel.webview
 
-internal object FlowRetryProvider {
+object FlowRetryProvider {
 
     var retry: () -> Unit = {}
     private set

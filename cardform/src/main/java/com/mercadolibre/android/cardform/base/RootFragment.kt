@@ -6,7 +6,7 @@ import com.mercadolibre.android.cardform.CARD_FORM_EXTRA
 import com.mercadolibre.android.cardform.internal.LifecycleListener
 import com.mercadolibre.android.cardform.di.Dependencies
 
-internal abstract class RootFragment<T : BaseViewModel> : BaseFragment<T>() {
+abstract class RootFragment<T : BaseViewModel> : BaseFragment<T>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import android.os.Bundle
 import com.mercadolibre.android.cardform.internal.LifecycleListener
 
-internal abstract class BaseViewModel : ViewModel() {
+abstract class BaseViewModel : ViewModel() {
     protected val contextProvider = CoroutineContextProvider()
 
     var lifecycleListener: LifecycleListener? = null

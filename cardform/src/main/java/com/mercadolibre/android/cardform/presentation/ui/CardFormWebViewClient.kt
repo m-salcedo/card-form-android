@@ -6,7 +6,7 @@ import android.os.Build
 import android.webkit.*
 import com.mercadolibre.android.cardform.base.orIfEmpty
 
-internal class CardFormWebViewClient: WebViewClient() {
+class CardFormWebViewClient: WebViewClient() {
 
     private var webViewListener: CardFormWebViewListener = object : CardFormWebViewListener {}
 
@@ -59,7 +59,7 @@ internal class CardFormWebViewClient: WebViewClient() {
     }
 }
 
-internal interface CardFormWebViewListener {
+interface CardFormWebViewListener {
     fun onPageFinished(url: String?) { }
     fun onPageStarted(url: String?) { }
     fun onPageError(url: String?, errorMessage: String) { }

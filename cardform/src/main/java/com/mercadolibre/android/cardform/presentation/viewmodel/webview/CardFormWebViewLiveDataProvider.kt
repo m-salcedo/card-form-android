@@ -6,7 +6,7 @@ import com.mercadolibre.android.cardform.presentation.model.ScreenState
 import com.mercadolibre.android.cardform.presentation.model.WebUiState
 import com.mercadolibre.android.cardform.presentation.model.WebViewData
 
-internal object CardFormWebViewLiveDataProvider {
+object CardFormWebViewLiveDataProvider {
     val webUiStateLiveData = MutableLiveData<WebUiState>()
     val screenStateMutableLiveData = MutableLiveData<ScreenState>()
     val loadWebViewMutableLiveData = MutableSingleLiveData<WebViewData>()

@@ -35,7 +35,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.net.UnknownHostException
 
-internal class InputFormViewModel(
+class InputFormViewModel(
     private val cardRepository: CardRepository,
     private val tokenizeUseCase: TokenizeUseCase,
     private val associatedCardUseCase: AssociatedCardUseCase,

@@ -11,7 +11,7 @@ import com.mercadolibre.android.cardform.EXIT_ANIM_EXTRA
 import com.mercadolibre.android.cardform.R
 import com.mercadolibre.android.cardform.internal.CardFormWithFragment
 
-internal class CardFormActivity : AppCompatActivity() {
+class CardFormActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

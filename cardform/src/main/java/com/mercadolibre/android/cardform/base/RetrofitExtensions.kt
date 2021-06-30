@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.base
 import org.json.JSONObject
 import retrofit2.Response
 
-internal fun <T> Response<T>.resolveRetrofitResponse(): T {
+fun <T> Response<T>.resolveRetrofitResponse(): T {
     return when {
         !isSuccessful -> {
             //https://github.com/square/retrofit/issues/3255

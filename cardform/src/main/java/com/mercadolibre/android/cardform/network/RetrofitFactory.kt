@@ -4,7 +4,7 @@ import android.content.Context
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-internal object RetrofitFactory {
+object RetrofitFactory {
 
     private const val MP_API_BASE_URL = "https://api.mercadopago.com"
     private const val DEFAULT_READ_TIMEOUT = 20

@@ -12,8 +12,8 @@ import com.mercadolibre.android.cardform.service.CardFormService
 import kotlinx.android.parcel.Parcelize
 import java.util.*
 
-internal const val CARD_FORM_EXTRA = "card_form"
-internal const val EXIT_ANIM_EXTRA = "exit_anim"
+const val CARD_FORM_EXTRA = "card_form"
+const val EXIT_ANIM_EXTRA = "exit_anim"
 
 open class CardForm : Parcelable {
 

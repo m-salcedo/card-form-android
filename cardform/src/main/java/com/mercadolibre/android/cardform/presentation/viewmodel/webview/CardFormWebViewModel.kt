@@ -32,7 +32,7 @@ private const val USER_IDENTIFICATION_TYPE_EXTRA = "user_identification_type"
 private const val TOKEN_DATA_EXTRA = "token_data"
 private const val TBK_TOKEN_KEY = "TBK_TOKEN"
 
-internal class CardFormWebViewModel(
+class CardFormWebViewModel(
     private val inscriptionUseCase: InscriptionUseCase,
     private val finishInscriptionUseCase: FinishInscriptionUseCase,
     private val associatedCardUseCase: AssociatedCardUseCase,

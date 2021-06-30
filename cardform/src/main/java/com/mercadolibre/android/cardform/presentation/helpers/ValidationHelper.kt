@@ -5,7 +5,7 @@ import com.mercadolibre.android.cardform.presentation.model.ValidationType
 typealias Valid = () -> Unit
 typealias Invalid = (errorMessage: String) -> Unit
 
-internal object ValidationHelper {
+object ValidationHelper {
 
     private val validations = mutableListOf<ValidationComponent>()
 
@@ -36,7 +36,7 @@ internal object ValidationHelper {
         return true
     }
 
-    internal data class ValidationComponent(
+    data class ValidationComponent(
         val validationType: ValidationType,
         val blockValid: Valid? = null,
         val blockInvalid: Invalid? = null

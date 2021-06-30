@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-internal data class WebViewData(
+data class WebViewData(
     val redirectUrl: String,
     val webUrl: String,
     val tokenData: ByteArray

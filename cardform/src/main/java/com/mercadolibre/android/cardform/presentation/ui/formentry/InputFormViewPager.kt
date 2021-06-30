@@ -10,7 +10,7 @@ import com.mercadolibre.android.cardform.presentation.extensions.getPxFromDp
 import kotlin.math.min
 
 
-internal class InputFormViewPager : ViewPager {
+class InputFormViewPager : ViewPager {
 
     private var scrollEnable = true
 

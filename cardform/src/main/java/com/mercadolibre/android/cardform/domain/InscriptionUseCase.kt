@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.domain
 import com.mercadolibre.android.cardform.base.UseCase
 import com.mercadolibre.android.cardform.base.map
 
-internal class InscriptionUseCase(
+class InscriptionUseCase(
     private val inscriptionRepository: InscriptionRepository
 ) : UseCase<Unit, InscriptionModel>() {
 

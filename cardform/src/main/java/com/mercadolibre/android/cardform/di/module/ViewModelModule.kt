@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.mercadolibre.android.cardform.data.model.esc.Device
 
-internal class ViewModelModule(
+class ViewModelModule(
     context: Context,
     useCaseModule: UseCaseModule,
     repositoryModule: RepositoryModule,

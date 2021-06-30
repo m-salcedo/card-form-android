@@ -5,7 +5,7 @@ import com.mercadolibre.android.cardform.domain.FinishInscriptionUseCase
 import com.mercadolibre.android.cardform.domain.InscriptionUseCase
 import com.mercadolibre.android.cardform.domain.TokenizeUseCase
 
-internal class UseCaseModule(repositoryModule: RepositoryModule) {
+class UseCaseModule(repositoryModule: RepositoryModule) {
     val tokenizeUseCase: TokenizeUseCase = TokenizeUseCase(repositoryModule.tokenizeRepository)
     val cardAssociationUseCase: AssociatedCardUseCase =
         AssociatedCardUseCase(repositoryModule.cardAssociationRepository)

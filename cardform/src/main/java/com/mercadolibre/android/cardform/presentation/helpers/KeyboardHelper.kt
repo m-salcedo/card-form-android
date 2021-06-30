@@ -6,7 +6,7 @@ import com.mercadolibre.android.cardform.presentation.extensions.addKeyBoardList
 import com.mercadolibre.android.cardform.presentation.extensions.hideKeyboard
 import com.mercadolibre.android.cardform.presentation.extensions.showKeyboard
 
-internal object KeyboardHelper {
+object KeyboardHelper {
 
     private var keyboardShowing = false
 

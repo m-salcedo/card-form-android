@@ -18,7 +18,7 @@ import java.net.URI
 private const val WEB_VIEW_DATA_EXTRA = "web_view_data"
 private const val WEB_VIEW_SETTING_USER_AGENT = "NoIframe"
 
-internal class CardFormWebViewFragment : BaseFragment<CardFormWebViewModel>() {
+class CardFormWebViewFragment : BaseFragment<CardFormWebViewModel>() {
     override val rootLayout = R.layout.fragment_web_view
     override val viewModel: CardFormWebViewModel by sharedViewModel { activity!! }
 

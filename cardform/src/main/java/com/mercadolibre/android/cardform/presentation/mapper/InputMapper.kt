@@ -5,7 +5,7 @@ import com.mercadolibre.android.cardform.base.Mapper
 import com.mercadolibre.android.cardform.data.model.response.FieldsSetting
 import com.mercadolibre.android.cardform.presentation.model.StepData
 
-internal object InputMapper : Mapper<StepData, FieldsSetting> {
+object InputMapper : Mapper<StepData, FieldsSetting> {
     override fun map(model: FieldsSetting): StepData {
         return StepData(
             model.name,

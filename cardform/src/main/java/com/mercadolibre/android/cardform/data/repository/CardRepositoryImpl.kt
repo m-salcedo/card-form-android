@@ -11,7 +11,7 @@ import kotlinx.coroutines.async
 import org.json.JSONObject
 import java.io.IOException
 
-internal class CardRepositoryImpl(
+class CardRepositoryImpl(
     private val cardService: CardService,
     private val siteId: String,
     private val excludedPaymentTypes: List<String>?,

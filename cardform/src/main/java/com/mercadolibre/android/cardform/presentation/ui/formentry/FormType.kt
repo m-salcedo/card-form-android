@@ -1,6 +1,6 @@
 package com.mercadolibre.android.cardform.presentation.ui.formentry
 
-internal enum class FormType(private val type: String) {
+enum class FormType(private val type: String) {
 
     CARD_NUMBER("card_number") {
         override var optional = false

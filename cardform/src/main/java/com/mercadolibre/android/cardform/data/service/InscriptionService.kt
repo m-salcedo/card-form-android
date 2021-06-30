@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 private const val ENVIRONMENT = BuildConfig.API_ENVIRONMENT
 
-internal interface InscriptionService {
+interface InscriptionService {
 
     @GET("/$ENVIRONMENT/px_mobile/v1/card_webpay/inscription/init")
     suspend fun getInscription(

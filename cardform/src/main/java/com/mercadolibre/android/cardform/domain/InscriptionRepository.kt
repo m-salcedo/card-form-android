@@ -2,7 +2,7 @@ package com.mercadolibre.android.cardform.domain
 
 import com.mercadolibre.android.cardform.base.ResponseCallback
 
-internal interface InscriptionRepository {
+interface InscriptionRepository {
     suspend fun getInscriptionData(): ResponseCallback<InscriptionBusinessModel>
 }
 

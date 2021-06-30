@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import com.mercadolibre.android.cardform.service.CardFormServiceManager
 
-internal class ServiceModule(
+class ServiceModule(
     context: Context,
     intent: Intent
 ) {

@@ -7,7 +7,7 @@ import android.os.IBinder
 import android.os.Message
 import android.os.Messenger
 
-internal class CardFormServiceConnection(
+class CardFormServiceConnection(
     private val dataBundle: Bundle,
     responseHandler: ResponseHandler
 ) : ServiceConnection {

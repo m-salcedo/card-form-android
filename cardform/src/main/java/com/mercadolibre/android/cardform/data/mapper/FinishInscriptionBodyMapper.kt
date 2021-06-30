@@ -6,7 +6,7 @@ import com.mercadolibre.android.cardform.data.model.body.FinishInscriptionBody
 import com.mercadolibre.android.cardform.data.model.body.IdentificationBody
 import com.mercadolibre.android.cardform.domain.FinishInscriptionParam
 
-internal class FinishInscriptionBodyMapper(
+class FinishInscriptionBodyMapper(
     private val siteId: String
 ) : Mapper<FinishInscriptionBody, FinishInscriptionParam> {
 

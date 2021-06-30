@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.data.model.response
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class Issuer (
+data class Issuer (
     val name : String,
     val id : Int,
     val imageUrl : String?,

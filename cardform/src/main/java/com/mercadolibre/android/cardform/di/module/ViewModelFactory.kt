@@ -7,7 +7,7 @@ import com.mercadolibre.android.cardform.presentation.viewmodel.webview.CardForm
 import com.mercadolibre.android.cardform.presentation.viewmodel.InputFormViewModel
 import com.mercadolibre.android.cardform.service.CardFormServiceManager
 
-internal class ViewModelFactory(
+class ViewModelFactory(
     private val useCaseModule: UseCaseModule,
     private val repositoryModule: RepositoryModule,
     private val behaviourModule: BehaviourModule,

@@ -8,7 +8,7 @@ import com.mercadolibre.android.cardform.data.model.body.CardInfoBody
 import com.mercadolibre.android.cardform.data.service.TokenizeService
 import kotlinx.coroutines.withContext
 
-internal class TokenizeRepositoryImpl(
+class TokenizeRepositoryImpl(
     private val accessToken: String,
     private val tokenizeService: TokenizeService,
     private val contextProvider: CoroutineContextProvider = CoroutineContextProvider()

@@ -8,7 +8,7 @@ import retrofit2.http.*
 
 private const val ENVIRONMENT = BuildConfig.API_ENVIRONMENT
 
-internal interface FinishInscriptionService {
+interface FinishInscriptionService {
     @POST("/$ENVIRONMENT/px_mobile/v1/card_webpay/inscription/finish")
     suspend fun getFinishInscription(
         @Query("access_token") accessToken: String,

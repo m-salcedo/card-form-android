@@ -26,7 +26,7 @@ import com.mercadolibre.android.cardform.presentation.utils.ViewUtils
 
 private const val SUCCESS_RETURN_DELAY = 1000L
 
-internal class CardFormWebActivity : AppCompatActivity() {
+class CardFormWebActivity : AppCompatActivity() {
 
     private val viewModel: CardFormWebViewModel by viewModel()
     private lateinit var cardFormWebContainer: FrameLayout

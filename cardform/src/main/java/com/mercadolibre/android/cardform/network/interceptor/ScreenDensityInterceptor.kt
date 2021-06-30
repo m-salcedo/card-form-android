@@ -5,7 +5,7 @@ import android.util.DisplayMetrics
 import okhttp3.Interceptor
 import okhttp3.Response
 
-internal class ScreenDensityInterceptor(private val context: Context) : Interceptor {
+class ScreenDensityInterceptor(private val context: Context) : Interceptor {
 
     companion object {
         private const val HEADER = "x-density"

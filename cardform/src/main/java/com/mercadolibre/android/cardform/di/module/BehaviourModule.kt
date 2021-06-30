@@ -2,7 +2,7 @@ package com.mercadolibre.android.cardform.di.module
 
 import com.mercadopago.android.px.addons.BehaviourProvider
 
-internal class BehaviourModule(sessionId: String) {
+class BehaviourModule(sessionId: String) {
     val escManager by lazy {
         BehaviourProvider.getEscManagerBehaviour(sessionId, true)
     }

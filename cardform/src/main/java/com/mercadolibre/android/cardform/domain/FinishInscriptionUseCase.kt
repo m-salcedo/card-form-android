@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.domain
 import com.mercadolibre.android.cardform.base.UseCase
 import com.mercadolibre.android.cardform.base.map
 
-internal class FinishInscriptionUseCase(
+class FinishInscriptionUseCase(
     private val finishInscriptionRepository: FinishInscriptionRepository
 ) : UseCase<FinishInscriptionParam, FinishInscriptionModel>() {
 

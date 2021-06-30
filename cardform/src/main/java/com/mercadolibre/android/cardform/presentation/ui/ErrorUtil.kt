@@ -14,7 +14,7 @@ import java.io.IOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
-internal object ErrorUtil {
+object ErrorUtil {
 
     fun createError(e: Throwable = UnknownError()): UiError {
 

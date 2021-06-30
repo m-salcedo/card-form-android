@@ -11,7 +11,7 @@ import com.mercadolibre.android.cardform.data.service.CardAssociationService
 import com.mercadolibre.android.cardform.domain.AssociatedCardParam
 import kotlinx.coroutines.withContext
 
-internal class CardAssociationRepositoryImpl(
+class CardAssociationRepositoryImpl(
     private val associationService: CardAssociationService,
     private val accessToken: String,
     private val contextProvider: CoroutineContextProvider = CoroutineContextProvider()

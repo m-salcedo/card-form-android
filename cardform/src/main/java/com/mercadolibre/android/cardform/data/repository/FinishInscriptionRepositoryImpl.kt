@@ -11,7 +11,7 @@ import com.mercadolibre.android.cardform.domain.FinishInscriptionBusinessModel
 import com.mercadolibre.android.cardform.domain.FinishInscriptionParam
 import kotlinx.coroutines.withContext
 
-internal class FinishInscriptionRepositoryImpl(
+class FinishInscriptionRepositoryImpl(
     private val accessToken: String,
     private val finishInscriptionBodyMapper: FinishInscriptionBodyMapper,
     private val finishInscriptionService: FinishInscriptionService,

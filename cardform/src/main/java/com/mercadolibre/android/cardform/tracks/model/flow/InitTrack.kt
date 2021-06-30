@@ -4,7 +4,7 @@ import com.mercadolibre.android.cardform.tracks.Track.Companion.BASE_PATH
 import com.mercadolibre.android.cardform.tracks.TrackData
 import com.mercadolibre.android.cardform.tracks.model.TrackSteps
 
-internal class InitTrack(private val type: String = TrackSteps.TRADITIONAL.getType()): TrackData {
+class InitTrack(private val type: String = TrackSteps.TRADITIONAL.getType()): TrackData {
     override fun addTrackData(data: MutableMap<String, Any>) {
         data[TYPE] = type
     }

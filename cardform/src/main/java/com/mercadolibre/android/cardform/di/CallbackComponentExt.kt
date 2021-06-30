@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModel
 
 
-internal inline fun <reified T : ViewModel> ComponentCallbacks.viewModel(): Lazy<T> {
+inline fun <reified T : ViewModel> ComponentCallbacks.viewModel(): Lazy<T> {
 
     val lazyViewModelModule = lazy { Dependencies.instance.viewModelModule!! }
 
@@ -23,7 +23,7 @@ internal inline fun <reified T : ViewModel> ComponentCallbacks.viewModel(): Lazy
     }
 }
 
-internal inline fun <reified T : ViewModel> sharedViewModel(
+inline fun <reified T : ViewModel> sharedViewModel(
     crossinline scope: () -> ComponentCallbacks
 ): Lazy<T> {
     return lazy { scope().viewModel<T>().value }

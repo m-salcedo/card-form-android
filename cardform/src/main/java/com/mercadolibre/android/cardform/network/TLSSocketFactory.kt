@@ -12,7 +12,7 @@ import javax.net.ssl.SSLSocketFactory
  * <p>
  * Source: http://blog.dev-area.net/2015/08/13/android-4-1-enable-tls-1-2/
  */
-internal class TLSSocketFactory(private val delegate: SSLSocketFactory) : SSLSocketFactory() {
+class TLSSocketFactory(private val delegate: SSLSocketFactory) : SSLSocketFactory() {
 
     override fun getDefaultCipherSuites(): Array<String> {
         return delegate.defaultCipherSuites

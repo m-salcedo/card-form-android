@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.presentation.model
 import com.mercadolibre.android.cardform.data.model.response.Validation
 import com.mercadolibre.android.cardform.presentation.ui.custom.Luhn.isValid
 
-internal sealed class ValidationType {
+sealed class ValidationType {
 
     abstract fun validate(): Boolean
     open fun getErrorMessage(): String = ""

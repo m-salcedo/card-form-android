@@ -28,7 +28,7 @@ import com.mercadolibre.android.cardform.presentation.viewmodel.webview.CardForm
 private const val ICON_FROM_EXTRA = "icon_from_state"
 private const val ICON_TO_EXTRA = "icon_to_state"
 
-internal class CardFormWebViewStateFragment : BaseFragment<CardFormWebViewModel>() {
+class CardFormWebViewStateFragment : BaseFragment<CardFormWebViewModel>() {
 
     override val viewModel: CardFormWebViewModel by sharedViewModel { activity!! }
     override val rootLayout = R.layout.fragment_card_form_web_view_state

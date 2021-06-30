@@ -10,7 +10,7 @@ import com.mercadolibre.android.cardform.data.service.InscriptionService
 import com.mercadolibre.android.cardform.data.service.TokenizeService
 import retrofit2.Retrofit
 
-internal class RepositoryModule(
+class RepositoryModule(
         retrofit: Retrofit,
         accessToken: String,
         siteId: String,

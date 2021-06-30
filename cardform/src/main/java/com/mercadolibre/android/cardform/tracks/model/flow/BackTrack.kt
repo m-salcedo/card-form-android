@@ -4,7 +4,7 @@ import com.mercadolibre.android.cardform.tracks.Track.Companion.BASE_PATH
 import com.mercadolibre.android.cardform.tracks.TrackData
 import com.mercadolibre.android.cardform.tracks.model.TrackSteps
 
-internal class BackTrack(
+class BackTrack(
     private val stepName: String = TrackSteps.TRADITIONAL.getType()
 ) : TrackData {
     override val pathEvent = "${BASE_PATH}/back"

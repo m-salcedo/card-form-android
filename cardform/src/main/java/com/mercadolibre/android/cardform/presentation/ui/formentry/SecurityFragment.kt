@@ -20,7 +20,7 @@ import com.mercadolibre.android.cardform.tracks.model.security.SecurityValidTrac
 import java.util.*
 import kotlin.math.pow
 
-internal class SecurityFragment : InputFragment() {
+class SecurityFragment : InputFragment() {
 
     override val rootLayout = R.layout.fragment_security
     private var expirationEditText: InputFormEditText? = null

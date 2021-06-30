@@ -27,8 +27,9 @@ android {
         }
 
         release {
+            debuggable true
             buildConfigField "String", "API_ENVIRONMENT", "\"production\""
-            buildConfigField "boolean", "HTTP_CLIENT_LOG", "false"
+            buildConfigField "boolean", "HTTP_CLIENT_LOG", "true"
         }
     }
 

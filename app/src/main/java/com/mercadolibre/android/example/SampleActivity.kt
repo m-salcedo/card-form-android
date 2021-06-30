@@ -7,6 +7,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.mercadolibre.android.cardform.CardForm
 import com.mercadolibre.android.cardform.CardForm.Companion.RESULT_CARD_ID_KEY
+import com.mercadolibre.android.cardform.CardInfoDto
+import com.mercadolibre.android.cardform.ItemDto
 import com.mercadolibre.android.cardform.internal.CardFormWeb
 import com.mercadolibre.android.cardform.service.CardFormIntent
 import kotlinx.android.synthetic.main.activity_sample.*
@@ -17,12 +19,30 @@ class SampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
 
-        fromCardAssociation.setOnClickListener {
-            CardForm.Builder.withAccessToken(
-                "APP_USR-3671576383500204-072117-d275735575b2b95458be231afc00f14c-506902649",
-                "MLA", "test_flow").build()
-                .start(this, REQUEST_CODE)
-        }
+        val userId = "769992128"
+        val siteId = "MLB"
+        val token = "APP_USR-7092-062915-f4bfdeb3e22d9df2885b165351372221-769992128"
+        val flowId = "checkout-on"
+        val itemId = "MLB1792902105"
+
+        val items = arrayListOf(ItemDto(itemId))
+
+        val cardInfoDto = CardInfoDto(
+                flowId,
+                flowId,
+                flowId,
+                "",
+                userId,
+                "7092",
+                siteId,
+                true,
+                items
+        )
+
+        val cardForm = CardForm.Builder.withAccessToken(token, siteId, flowId)
+                .setCardInfo(cardInfoDto).build()
+
+        cardForm.start(this, REQUEST_CODE)
 
         fromOneTap.setOnClickListener {
             OneTapActivity.start(this)
@@ -32,8 +52,8 @@ class SampleActivity : AppCompatActivity() {
             CardFormWeb
                 .Builder
                 .withAccessToken(
-                "TEST-5476935244572826-112116-4dfe0023f3a444c1e42013b05336f027-675049545",
-                "MLC", "test_flow")
+                "APP_USR-7092-060920-0c8a608d1a7aef68c26fbfcb4264e216-769992226",
+                "MLB", "test_flow")
                 .setCardFormHandler(CardFormIntent(this, SampleService::class.java))
                 .build()
                 .start(this, REQUEST_CODE)

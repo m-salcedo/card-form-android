@@ -9,7 +9,7 @@ import com.mercadolibre.android.cardform.domain.InscriptionBusinessModel
 import com.mercadolibre.android.cardform.domain.InscriptionRepository
 import kotlinx.coroutines.withContext
 
-internal class InscriptionRepositoryImpl(
+class InscriptionRepositoryImpl(
     private val accessToken: String,
     private val inscriptionService: InscriptionService,
     private val contextProvider: CoroutineContextProvider = CoroutineContextProvider()

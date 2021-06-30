@@ -21,7 +21,7 @@ import com.mercadolibre.android.cardform.tracks.model.name.NameView
 /**
  * A simple [Fragment] subclass.
  */
-internal class CardNameFragment : InputFragment() {
+class CardNameFragment : InputFragment() {
 
     override val rootLayout = R.layout.fragment_name_card
     private lateinit var preferences: NameOwnerPreferences

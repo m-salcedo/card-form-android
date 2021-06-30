@@ -1,6 +1,6 @@
 package com.mercadolibre.android.cardform.presentation.model
 
-internal interface InputData {
+interface InputData {
     val name: String
     val maxLength: Int
     val type: String

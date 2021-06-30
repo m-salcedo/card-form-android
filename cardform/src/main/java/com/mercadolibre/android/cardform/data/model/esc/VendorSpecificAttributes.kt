@@ -8,7 +8,7 @@ import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
 
-internal class VendorSpecificAttributes(context: Context) {
+class VendorSpecificAttributes(context: Context) {
 
     val featureCamera = context.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA)
     val featureFlash = context.packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)

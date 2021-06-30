@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.tracks.model.flow
 import com.mercadolibre.android.cardform.tracks.Track.Companion.BASE_PATH
 import com.mercadolibre.android.cardform.tracks.TrackData
 
-internal class SuccessTrack(
+class SuccessTrack(
     private val bin: String,
     private val issuer: Int,
     private val paymentMethodId: String,

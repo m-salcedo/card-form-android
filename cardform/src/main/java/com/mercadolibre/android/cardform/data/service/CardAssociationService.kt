@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 private const val ENVIRONMENT = BuildConfig.API_ENVIRONMENT
 
-internal interface CardAssociationService {
+interface CardAssociationService {
     @POST("/$ENVIRONMENT/px_mobile/v1/card")
     suspend fun associateCard(
         @Query("access_token") accessToken: String,

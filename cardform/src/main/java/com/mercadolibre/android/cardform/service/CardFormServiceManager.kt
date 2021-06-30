@@ -7,15 +7,15 @@ import android.os.Bundle
 /**
  * Register the client and send the cardId value for the integrator to process.
  */
-internal const val MSG_REGISTER_CLIENT = 1
+const val MSG_REGISTER_CLIENT = 1
 
 /**
  * Association process is finished
  */
-internal const val MSG_PROCESS_FINISHED = 2
+const val MSG_PROCESS_FINISHED = 2
 
 
-internal class CardFormServiceManager(private val context: Context, private val intent: Intent) {
+class CardFormServiceManager(private val context: Context, private val intent: Intent) {
 
     private lateinit var cardFormServiceConnection: CardFormServiceConnection
 

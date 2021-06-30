@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.mercadolibre.android.cardform.data.model.** { *; }
+-keep class com.mercadolibre.android.cardform.** { *; }
 
 ############ KOTLIN COROUTINES ############
 -dontwarn kotlinx.coroutines.flow.**inlined**

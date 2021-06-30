@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.presentation.model
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class CardStepInfo(
+data class CardStepInfo(
     var cardNumber: String = "",
     var nameOwner: String = "",
     var expiration: String = "",

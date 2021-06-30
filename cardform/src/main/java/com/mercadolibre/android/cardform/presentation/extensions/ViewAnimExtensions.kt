@@ -12,7 +12,7 @@ private fun loadAnimation(context: Context, @AnimRes id: Int): Animation {
     return AnimationUtils.loadAnimation(context, id)
 }
 
-internal fun <T : View> T.pushUpIn(
+fun <T : View> T.pushUpIn(
     startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
@@ -30,15 +30,15 @@ internal fun <T : View> T.pushUpIn(
     }
 }
 
-internal fun Fragment.postDelayed(delay: Long, runnable: (() -> Unit)) = view?.postDelayed(runnable, delay)
+fun Fragment.postDelayed(delay: Long, runnable: (() -> Unit)) = view?.postDelayed(runnable, delay)
 
-internal fun <T : View> T.goneDuringAnimation() = context?.let {
+fun <T : View> T.goneDuringAnimation() = context?.let {
     loadAnimation(it, R.anim.cf_gone).apply {
         startAnimation(this)
     }
 }
 
-internal fun <T : View> T.pushDownIn(
+fun <T : View> T.pushDownIn(
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
     onStart: (() -> Unit)? = null
@@ -52,7 +52,7 @@ internal fun <T : View> T.pushDownIn(
     }
 }
 
-internal fun <T : View> T.pushDownOut(
+fun <T : View> T.pushDownOut(
     startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
@@ -68,7 +68,7 @@ internal fun <T : View> T.pushDownOut(
     }
 }
 
-internal fun <T : View> T.slideLeftIn(
+fun <T : View> T.slideLeftIn(
     startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
@@ -86,7 +86,7 @@ internal fun <T : View> T.slideLeftIn(
     }
 }
 
-internal fun <T : View> T.fadeOut(duration: Long? = null, startOffset: Long? = null,
+fun <T : View> T.fadeOut(duration: Long? = null, startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null, onFinish: (() -> Unit)? = null, onStart: (() -> Unit)? = null
 ) = context?.let {context ->
     loadAnimation(context, R.anim.cf_fade_out).apply {
@@ -97,7 +97,7 @@ internal fun <T : View> T.fadeOut(duration: Long? = null, startOffset: Long? = n
     }
 }
 
-internal fun <T : View> T.fadeIn(duration: Long? = null, startOffset: Long? = null,
+fun <T : View> T.fadeIn(duration: Long? = null, startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null, onFinish: (() -> Unit)? = null, onStart: (() -> Unit)? = null
 ) = context?.let {context ->
     loadAnimation(context, R.anim.cf_fade_in).apply {
@@ -108,7 +108,7 @@ internal fun <T : View> T.fadeIn(duration: Long? = null, startOffset: Long? = nu
     }
 }
 
-internal fun <T : View> T.slideLeftOut(
+fun <T : View> T.slideLeftOut(
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
     onStart: (() -> Unit)? = null
@@ -122,7 +122,7 @@ internal fun <T : View> T.slideLeftOut(
     }
 }
 
-internal fun <T : View> T.slideRightOut(
+fun <T : View> T.slideRightOut(
     startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,
@@ -138,7 +138,7 @@ internal fun <T : View> T.slideRightOut(
     }
 }
 
-internal fun <T : View> T.slideRightIn(
+fun <T : View> T.slideRightIn(
     startOffset: Long? = null,
     onRepeat: (() -> Unit)? = null,
     onFinish: (() -> Unit)? = null,

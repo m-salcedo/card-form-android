@@ -4,7 +4,7 @@ import com.mercadolibre.android.cardform.base.UseCase
 import com.mercadolibre.android.cardform.base.map
 import com.mercadolibre.android.cardform.data.repository.CardAssociationRepository
 
-internal class AssociatedCardUseCase(
+class AssociatedCardUseCase(
     private val cardAssociationRepository: CardAssociationRepository
 ) : UseCase<AssociatedCardParam, String>() {
 
@@ -12,7 +12,7 @@ internal class AssociatedCardUseCase(
         cardAssociationRepository.associateCard(param).map { associatedCard -> associatedCard.id }
 }
 
-internal data class AssociatedCardParam(
+data class AssociatedCardParam(
     val cardTokenId: String,
     val paymentMethodId: String,
     val paymentMethodType: String,

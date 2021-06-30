@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.data.model.response
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class PaymentMethod(
+data class PaymentMethod(
     val paymentMethodId: String,
     val paymentTypeId: String,
     val name: String,

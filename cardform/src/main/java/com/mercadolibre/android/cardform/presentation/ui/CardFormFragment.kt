@@ -34,7 +34,7 @@ import kotlinx.android.synthetic.main.fragment_card_form.*
  * Use the [CardFormFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-internal class CardFormFragment : RootFragment<InputFormViewModel>() {
+class CardFormFragment : RootFragment<InputFormViewModel>() {
 
     override val rootLayout = R.layout.fragment_card_form
     override val viewModel: InputFormViewModel by viewModel()

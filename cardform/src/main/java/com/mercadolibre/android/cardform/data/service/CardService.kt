@@ -5,7 +5,7 @@ import com.mercadolibre.android.cardform.data.model.response.RegisterCard
 import retrofit2.Response
 import retrofit2.http.*
 
-internal interface CardService {
+interface CardService {
 
     @GET("/{environment}/px_mobile/v1/card")
     suspend fun getCardInfoAsync(

@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.presentation.utils
 import android.graphics.Color
 import androidx.annotation.ColorInt
 
-internal object ViewUtils {
+object ViewUtils {
     private const val DARKEN_FACTOR = 0.1f
 
     @ColorInt

@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.data.model.response
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class CardUi (
+data class CardUi (
     val cardNumberLength : Int,
     val cardColor : String,
     val cardFontColor : String,

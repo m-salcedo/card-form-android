@@ -25,7 +25,7 @@ import kotlinx.android.synthetic.main.cf_input_form_edittext.view.*
 
 typealias OnTextChanged = (s: String) -> Unit
 
-internal class InputFormEditText(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
+class InputFormEditText(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
     LinearLayout(context, attrs, defStyleAttr) {
 
     private var infoHint: String = ""
@@ -363,7 +363,7 @@ internal class InputFormEditText(context: Context, attrs: AttributeSet?, defStyl
         this.iconClickListener = iconClickListener
     }
 
-    internal class InputSavedState : BaseSavedState {
+    class InputSavedState : BaseSavedState {
         private var isFocusable: Boolean
         private var hasError: Boolean
         private var errorMessage: String?
@@ -418,7 +418,7 @@ internal class InputFormEditText(context: Context, attrs: AttributeSet?, defStyl
         }
     }
 
-    internal enum class Icon {
+    enum class Icon {
         EMPTY,
         CLEAR,
         CHECK;

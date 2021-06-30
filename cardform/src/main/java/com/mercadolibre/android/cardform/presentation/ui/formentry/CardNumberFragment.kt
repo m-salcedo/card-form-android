@@ -26,7 +26,7 @@ import kotlinx.android.synthetic.main.fragment_number_card.*
 /**
  * A simple [Fragment] subclass.
  */
-internal class CardNumberFragment : InputFragment() {
+class CardNumberFragment : InputFragment() {
 
     override val rootLayout = R.layout.fragment_number_card
     private var validations = listOf<Validation>()

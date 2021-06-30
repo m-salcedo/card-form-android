@@ -3,7 +3,7 @@ package com.mercadolibre.android.cardform.presentation.model
 import android.os.Parcel
 import android.os.Parcelable
 
-internal data class Identification(
+data class Identification(
     val id: String,
     val name: String,
     val type: String,
