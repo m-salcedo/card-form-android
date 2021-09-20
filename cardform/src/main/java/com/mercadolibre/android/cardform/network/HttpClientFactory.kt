@@ -23,8 +23,8 @@ internal object HttpClientFactory {
     private const val CACHE_SIZE = 10 * 1024 * 1024 // 10 MB
     private const val TLS_1_2 = "TLSv1.2"
     private const val CACHE_DIR_NAME = "PX_OKHTTP_CACHE_SERVICES"
-    private val LOGGING_INTERCEPTOR = if (BuildConfig.HTTP_CLIENT_LOG)
-        HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
+    private val LOGGING_INTERCEPTOR =
+        HttpLoggingInterceptor.Level.BODY
 
     fun get(
         context: Context, connectTimeout: Int, readTimeout: Int,
