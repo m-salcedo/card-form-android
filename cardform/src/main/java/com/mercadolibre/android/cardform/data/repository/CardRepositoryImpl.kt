@@ -35,7 +35,7 @@ internal class CardRepositoryImpl(
             try {
                 val response = if (flowId.startsWith("checkout-on") && cardInfo != null) {
                     cardInfo.bin = bin
-                    cardService.getCardInfoAsyncFromMarketplace(BuildConfig.API_ENVIRONMENT, cardInfo!!)
+                    cardService.getCardInfoAsyncFromMarketplace("alpha", cardInfo!!)
                 } else {
                     cardService.getCardInfoAsync(BuildConfig.API_ENVIRONMENT, bin,
                             siteId, excludedPaymentTypes)
